@@ -388,8 +388,8 @@ h1, h2, h3, h4, h5, h6{
 	opacity: 1;
 }
 .footer .container {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
 }
 .footer_contacts {
 }
@@ -405,7 +405,10 @@ h1, h2, h3, h4, h5, h6{
 
 }
 .footer_list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
+
 .footer_list-title {
 }
 .footer_inner-list {
